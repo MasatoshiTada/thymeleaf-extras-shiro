@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialect xmlns="http://www.thymeleaf.org/extras/dialect"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.thymeleaf.org/extras/dialect http://www.thymeleaf.org/xsd/thymeleaf-extras-dialect-2.1.xsd"
+         prefix="shiro"
+         namespace-uri="http://suke_masa.com/thymeleaf/shiro"
+         namespace-strict="false"
+         class="com.suke_masa.thymeleaf.extras.shiro.dialect.ShiroDialect">
+
+    <attribute-processor
+            name="authentication"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.AuthenticatedAttributeProcessor">
+        <documentation
+                reference="authentication attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="notAuthenticated"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.NotAuthenticatedAttributeProcessor">
+        <documentation
+                reference="notAuthenticated attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="guest"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.GuestAttributeProcessor">
+        <documentation
+                reference="guest attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="user"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.UserAttributeProcessor">
+        <documentation
+                reference="user attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="hasRole"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.HasRoleAttributeProcessor">
+        <documentation
+                reference="hasRole attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="lacksRole"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.LacksRoleAttributeProcessor">
+        <documentation
+                reference="lacksRole attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="hasRole"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.HasAnyRoleAttributeProcessor">
+        <documentation
+                reference="hasAnyRole attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="hasPermission"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.HasPermissionAttributeProcessor">
+        <documentation
+                reference="hasPermission attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="lacksPermission"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.LacksPermissionAttributeProcessor">
+        <documentation
+                reference="lacksPermission attribute"/>
+    </attribute-processor>
+
+    <attribute-processor
+            name="principal"
+            class="com.suke_masa.thymeleaf.extras.shiro.dialect.processor.PrincipalAttributeProcessor">
+        <documentation
+                reference="principal attribute"/>
+    </attribute-processor>
+
+</dialect>
